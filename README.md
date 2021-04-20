@@ -1,5 +1,4 @@
 # Homepage petstore
-Projeto realizado para participar de um processo seletivo.
 
 Você encontra o print da página desenvolvida aqui - https://www.behance.net/gallery/117870639/Homepage-Pet-Store
 
