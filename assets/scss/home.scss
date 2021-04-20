@@ -1,0 +1,348 @@
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h3{
+    text-transform: uppercase;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 14px;
+    color: gray;
+    margin: 5px;
+}
+
+.strong{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.precos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    p{
+        margin-right: 15px;
+    }
+}
+
+.riscado{
+    text-decoration: line-through;
+    margin-bottom: 0;
+}
+
+header{
+    margin-top: 10px;
+    .header-superior{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+        .pesquisa{
+            border: 1px solid #D9D9D9;
+            padding: 5px;
+            input{
+                border: none;
+            }
+        }
+    }
+    .menu{
+        background-color: #8058C4;
+        padding: 1px;
+        .hamburguer-mob{
+            display: none;
+        }
+        .itens-menu{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: center;
+            li{
+                margin-left: 25px;
+                a{
+                    color: white;
+                }
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+
+#banner{
+    margin-bottom: -5px;
+    img{
+        max-width: 100%;
+    }
+}
+
+#secoes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #EAA329;
+    padding: 12px 10px;
+    div{
+        margin-right: 20px;
+        img{
+            max-width: 230px;
+        }
+    }
+}
+
+#novidades{
+    text-align: center;
+    padding: 0px 120px;
+    .produtos-novidades{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;  
+        justify-content: center;
+        .produto{
+            margin-right: 10px;
+            img{
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+#produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    img{
+        max-width: 410px;
+    }
+    .gato{
+        margin-right: 20px;
+    }
+}
+
+#destaques{
+    text-align: center;
+    margin-top: 70px;
+    width: 83%;
+    margin: 0 auto;
+    .produtos-destaque{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 100px;
+        justify-content: center;
+        img{
+            max-width: 230px;
+        }
+        .produto{
+            margin-right: 10px;
+        }
+    }
+}
+
+#newsletter{
+    background-color: #8058C4;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    .destaques{
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            border-bottom: 2px solid #EAA329;
+            width: 67%;
+            margin: 0 auto;
+            padding: 15px 0;
+            li{ 
+                margin-right: 30px;
+                font-size: 11px;
+                text-transform: uppercase;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                img{
+                    max-width: 22px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+    .newsletter{
+        margin: 45px 0;
+        h2{
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+        .texto-newsletter{
+            color: white;
+            margin-bottom: 40px;
+        }
+        form{
+            input{
+                border: none;
+                border-bottom: 1px solid white;
+                background: transparent;
+                width: 12%;
+                margin-right: 20px;
+
+                &::-webkit-input-placeholder {
+                    color: white;
+                }
+                 
+                &:-moz-placeholder {
+                    color: white;
+                }
+                 
+                &::-moz-placeholder {
+                    color: white;  
+                }
+                 
+                &:-ms-input-placeholder {  
+                    color: white;  
+                }
+            }
+            .email{
+                width: 16%;
+            }
+            button{
+                border: none;
+                background-color: #EAA329;
+                padding: 7px 12px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+footer{
+    .conteudo-footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        ul{
+            list-style: none;
+            li, a{
+                color: gray;
+                padding-bottom: 10px;
+                font-size: 14px;
+            }
+        }
+        .titulo{
+            color: #8058C4;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .logo{
+            img{
+                max-width: 250px;
+            }
+            .textinhos{
+                text-align: center;
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .direitos{
+        width: 83%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: revert;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid lightgray;
+        margin: 0 auto;
+        padding-top: 10px;
+        img{
+            max-height: 15px;
+            width: auto;
+            margin-left: 15px;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        .header-superior{
+            flex-direction: column;
+            .pesquisa{
+                display: none;
+            }
+        }
+        .menu{
+            padding: 5px;
+            margin-left: 0;
+            .show{
+                display: flex;
+            }
+            .hamburguer-mob{
+                display: block;
+                width: 23px;
+            }
+            .hamburguer-desk{
+                display: none;
+            }
+            .itens-menu{  
+                display: none; 
+                flex-direction: column;
+                li{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    #produtos{
+        justify-content: flex-start;
+        img{
+            max-width: 100%;
+        }
+        .gato{
+            margin-right: 0;
+        }
+    }
+    #newsletter{
+        .destaques{
+            ul{
+                li{
+                    margin-bottom: 10px;
+                }
+            } 
+
+        }
+    }
+    footer{
+        .conteudo-footer{
+            padding-bottom: 20px;
+            ul{
+                padding-inline-start: 0;
+            }
+            .logo{
+                padding-right: 20px;
+            }
+        }
+    }
+}
